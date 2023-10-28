@@ -153,19 +153,19 @@ let student4 = new StudentsModel ({firstName: "Cristian", lastName: "Leal", mark
 //     .then(student => {
 //         console.log(`Profesores de ${student.firstName} ${student.lastName}:`);
 
-//         for (const mark of student.marks) {
-//             const subjects = mark.subjects;
+//         for (let i = 0; i < student.marks.length; i++) {
+//             const subjects = student.marks[i].subjects;
 
-//             for (const subject of subjects) {
-//                 const teachers = subject.teachers;
+//             for (let j = 0; j < subjects.length; j++) {
+//                 const teachers = subjects[j].teachers;
 
-//                 for (const teacher of teachers) {
-//                     console.log(`- Profesor: ${teacher.firstName} ${teacher.lastName}`);
+//                 for (let k = 0; k < teachers.length; k++) {
+//                     console.log(`- Profesor: ${teachers[k].firstName} ${teachers[k].lastName}`);
 //                 }
 //             }
 //         }
 //         mongoose.disconnect();
 //     })
-//     .catch(Error => {
-//         console.log(Error);
+//     .catch(error => {
+//         console.log(error);
 //     });
