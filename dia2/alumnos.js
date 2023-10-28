@@ -78,8 +78,8 @@ let student4 = new StudentsModel ({firstName: "Cristian", lastName: "Leal", mark
 //               mongoose.disconnect();
 
 //      })
-//       .catch(function(err) {
-//           console.error(err);
+//       .catch((err) => {
+//           console.log(err);
 //      });
 
 
@@ -89,8 +89,8 @@ let student4 = new StudentsModel ({firstName: "Cristian", lastName: "Leal", mark
 //              console.log(result);
 //              mongoose.disconnect();
 //      })
-//       .catch(function(err) {
-//             console.error(err);
+//       .catch((err) => {
+//             console.log(err);
 //      });
 
 
@@ -102,7 +102,7 @@ let student4 = new StudentsModel ({firstName: "Cristian", lastName: "Leal", mark
 //            mongoose.disconnect();
 //     })
 //     .catch((err) => {
-//       console.error(err);
+//       console.log(err);
 //     });
 
 
@@ -112,8 +112,8 @@ let student4 = new StudentsModel ({firstName: "Cristian", lastName: "Leal", mark
 //               console.log(result);
 //               mongoose.disconnect();
 //         })
-//         .catch(function(err) {
-//               console.error(err);
+//         .catch((err) => {
+//               console.log(err);
 //         });    
 
 /* Mostrar todas las notas de un alumno */
@@ -127,7 +127,7 @@ let student4 = new StudentsModel ({firstName: "Cristian", lastName: "Leal", mark
 //                     mongoose.disconnect();
 //                     })
 //                     .catch(error => {
-//                         console.error("Error al buscar el estudiante:", error);
+//                         console.log(error);
 //                     });
          
 /* Mostrar todas las asignaturas de un alumno */   
@@ -142,7 +142,7 @@ let student4 = new StudentsModel ({firstName: "Cristian", lastName: "Leal", mark
     //     mongoose.disconnect();
     // })
     // .catch(error => {
-    //     console.error("Error al buscar el estudiante:", error);
+    //     console.log(error);
     // });
 
 
