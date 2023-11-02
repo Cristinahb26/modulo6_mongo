@@ -4,7 +4,7 @@ const photo = require("../model/photos");
 function getPhotos(req, res) {
     const usuario = req.query.UserName; 
 
-  if(usuario !== null){
+  if(usuario){
   photo.find({UserName: usuario})
      .then((resul) => {
         console.log(resul);
@@ -17,6 +17,7 @@ function getPhotos(req, res) {
         } else {
           res.status(400).send('Usuario no proporcionado');
         }
+
 };
 
 function postPhotos(req, res){
